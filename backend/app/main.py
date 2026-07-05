@@ -100,11 +100,40 @@ async def websocket_endpoint(websocket: WebSocket, user_id: int):
         print(f"WebSocket error for user {user_id}: {e}")
         manager.disconnect(websocket, user_id)
 
-@app.get("/")
-def read_root():
-    return {
-        "status": "online",
-        "service": settings.PROJECT_NAME,
-        "docs_url": "/docs",
-        "version": "1.0.0"
-    }
+# Mount frontend static files
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+
+# Check both relative path for local dev and absolute path for Docker container
+dist_paths = [
+    os.path.abspath(os.path.join(os.path.dirname(__file__), "../../frontend/dist")),
+    "/app/frontend/dist"
+]
+frontend_dist_path = None
+for p in dist_paths:
+    if os.path.exists(p):
+        frontend_dist_path = p
+        break
+
+if frontend_dist_path:
+    print(f"Mounting frontend assets from: {frontend_dist_path}")
+    app.mount("/assets", StaticFiles(directory=os.path.join(frontend_dist_path, "assets")), name="static")
+
+    @app.get("/{catchall:path}")
+    async def serve_frontend(catchall: str):
+        if catchall.startswith("api/"):
+            raise HTTPException(status_code=404, detail="API endpoint not found")
+        
+        index_path = os.path.join(frontend_dist_path, "index.html")
+        if os.path.exists(index_path):
+            return FileResponse(index_path)
+        return {"message": "Frontend build files missing."}
+else:
+    @app.get("/")
+    def read_root():
+        return {
+            "status": "online",
+            "service": settings.PROJECT_NAME,
+            "docs_url": "/docs",
+            "version": "1.0.0"
+        }

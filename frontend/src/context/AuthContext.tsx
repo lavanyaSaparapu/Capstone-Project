@@ -31,8 +31,23 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 // API base configuration
-export const API_BASE = "http://127.0.0.1:8000/api/v1";
-export const WS_BASE = "ws://127.0.0.1:8000/ws";
+export const API_BASE = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" 
+  ? "http://127.0.0.1:8000/api/v1" 
+  : `${window.location.origin}/api/v1`;
+
+export const WS_BASE = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1"
+  ? "ws://127.0.0.1:8000/ws"
+  : `${window.location.protocol === "https:" ? "wss:" : "ws:"}//${window.location.host}/ws`;
+
+// Axios request interceptor to rewrite absolute backend URLs in production
+axios.interceptors.request.use((config) => {
+  if (config.url && config.url.startsWith("http://127.0.0.1:8000")) {
+    if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") {
+      config.url = config.url.replace("http://127.0.0.1:8000", window.location.origin);
+    }
+  }
+  return config;
+});
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<UserResponse | null>(() => {
