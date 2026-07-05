@@ -1,0 +1,32 @@
+# NextGen ATS Capstone Project Task List
+
+- `[x]` **Phase 1: Project Environment & Boilerplate Setup**
+  - `[x]` Initialize workspace structure (create `backend/` and `frontend/` folders)
+  - `[x]` Create Python virtual environment and configure backend `requirements.txt`
+  - `[x]` Create React Vite frontend with TypeScript, Tailwind CSS, Framer Motion, and GSAP
+- `[x]` **Phase 2: Database, Auth, and Security Hardening**
+  - `[x]` Implement `database.py` and models (Users, Jobs, Resumes, Applications, Interviews, AuditLogs)
+  - `[x]` Implement `auth.py` with fine-grained RBAC permissions (Admin/Recruiter/Candidate)
+  - `[x]` Integrate security hardening: CORS middleware, slowapi rate-limiting, secure file upload size/type constraints
+- `[x]` **Phase 3: Core AI and Vector Search Services**
+  - `[x]` Create NLP parser using spaCy (skills/keyword/experience extraction)
+  - `[x]` Implement `vector_search.py` (Sentence Transformers, L2 Normalization, and dot product similarity)
+  - `[x]` Set up AI generator service (Cover Letter, Suggestion engine, Interview questions)
+- `[x]` **Phase 4: Async Processing, WebSockets, and Backend Routes**
+  - `[x]` Write `websockets.py` Connection Manager
+  - `[x]` Write `background_tasks.py` (FastAPI BackgroundTasks with queue abstraction interface)
+  - `[x]` Implement API routers (auth, jobs, resumes, audit logs, analytics) with database audits
+- `[x]` **Phase 5: Frontend Design System and Authentication**
+  - `[x]` Configure glassmorphic design system (`tailwind.config.js` and `index.css`)
+  - `[x]` Implement Theme & Auth contexts with route guards (`RouteGuard.tsx`)
+  - `[x]` Build Login / Register page with glassmorphic style and animations
+- `[x]` **Phase 6: Frontend Pages and Core Components**
+  - `[x]` Build Landing Page with premium animations (Framer Motion / GSAP)
+  - `[x]` Build Sidebar, Navbar, and Dashboard layouts (analytics counters, charts, activities)
+  - `[x]` Implement Drag & Drop `Dropzone` with uploading indicators
+  - `[x]` Create Resume Scanner preview, score ring meter, and suggestion cards
+  - `[x]` Build Job Creation, Candidate Ranking lists, AI Assistant features, and Audit Logs dashboard
+- `[x]` **Phase 7: CI/CD Setup and Final Verification**
+  - `[x]` Set up GitHub Actions CI/CD pipeline workflow (`ci.yml`)
+  - `[x]` Run test suite verification
+  - `[x]` Generate `walkthrough.md` with visual summary

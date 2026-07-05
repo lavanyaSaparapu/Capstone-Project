@@ -1,0 +1,68 @@
+LAVANYA SAPARAPU                                           Email:saparapulavanya813@gmail.co m     
+Linkedin:  https://www.linkedin.com/in/saparapu -lavanya -2843182aa  
+GitHub/ Behance:  https://github.com/lavanyaSaparapu                     Mobile:+91 9347513849   
+  
+ 
+  
+Bonam Venkata Chalamayya Engineering College                                                                                                       Odalarevu, India   
+Artificial Intelligence and Machine Learning; GPA: 8.79 / 10                                                                          September2023 - April 2027   
+Sri Chaitanya junior College                                                                                                                                         Amalapuram, India 
+Intermediate MPC; GPA: 96.73%                                                                                                                       August 2021 - March2023  
+  
+ 
+SKILLS SUMMARY   
+● Languages :  Python, HTML,CSS,JavaScript,React js  
+● Frameworks :  Pandas, Numpy, Scikit -Learn, Matplotlib  
+● Tools :  Power BI, Excel, PowerPoint, Tableau, MySQL, SQLite  
+● Platforms :  PyCharm, Jupyter Notebook, Visual Studio Code, Intellij IDEA  
+● Soft  Skills :  Rapport Building, Strong Stakeholder management,  People Management, Excellent communication  
+  
+ 
+WORK EXPERIENCE   
+MACHINE LEARNING INTERN | LINK:  https://learn.talentshineindia.com/v3/myaccount/certificates                 May2025 - July2025  
+○ Tech Stack:  Python, NumPy, Pandas, Matplotlib, Scikit -learn, Jupyter Notebook  
+○ Gained practical ecperience in Machine Learning using Python through hands -on training and real -world .  
+○ Explored techniques for cleaning datasets,selecting relevant features,and assessing model .  
+○ Built and tested machine learning models for tasks such as classification and prediction.  
+○ Utilized Python tools and libraries to analyse data and create meaningful visualizations.   
+○ Strengthened skills in designing , training,and validating predictive models for data -driven solutions.  
+  
+ 
+PROJECTS   
+Skill Radar | LINK: https://skill -gap-live-radar.vercel.app/                                                                    September 23 - October 2025 ○ 
+Tech Stack : React.js, JavaScript, JSON, CSS                                            .  
+○ Engineered a Skill Gap Intelligence platform to benchmark user proficiency across 10+ competencies and surface targeted 
+improvement areas aligned with career roles..                                                                        
+○  Architected a React.js -based Skill Gap Intelligence system with Firebase integration to evaluate multi -skill proficiency, deliver 
+tiered assessments, and visualize real -time progress through interactive analytics.        
+○  Crafted a responsive and immersive interface using React.js , incorporating radar -based insights, progress mapping, and 
+diverse practice modes (coding, debugging, timed challenges).                                                                            .  
+SHOPEZ:ECOMMERCE APPLICA TION | LINK: https://github.com/lavanyaSaparapu/SHOPEZ            October 23 - November 2025  
+○ Tech Stack:  React.js, Node.js, Express.js, MongoDB, JavaScript, CSS  
+• Developed a full -stack e -commerce application with secure user authentication, product browsing, shopping cart, and order 
+management.  
+• Built responsive user and admin dashboards with product management, category filtering, and search functionality.  
+• Integrated MongoDB and RESTful APIs to manage products, users, and orders efficiently.  
+ 
+Tic-Tac-Toe Web Application | LINK:  https://github.com/lavanyaSaparapu                                             December25 - January 2025   
+○ Tech Stack: HTML,CSS,JavaScript  
+○ Implemented game -state management and turn -based logic to control player interactions.                       
+○ Implemented game -state management and turn -based logic to control player interactions.                                  
+○ Leveraged JavaScript event -driven programming and DOM updates to deliver a smooth and interactive gameplay experience.             
+  
+
+ 
+CERTIFICATES   
+ Responsible & Safe Ai Systems(NPTEL) |https://www.linkedin.com/in/saparapu -lavanya -2843182aa                        Jul2025 -Oct2025   
+○ Successfully completed the Responsible and Safe AI Systems  certification from NPTEL , developing knowledge of ethical AI 
+design, governance, and safety frameworks.                    
+○  Acquired skills in identifying AI risks, ensuring fairness and transparency, and promoting trustworthy deployment of intellig ent 
+systems.  
+Build a retrieval augmented generation pattern with lang chain (IBM SkillsBuild) |                                                    February 2026  
+○  Explored the Retrieval -Augmented Generation  approach to combine external data retrieval with language models for 
+producing precise and context -rich responses.                   
+○ Built AI pipelines using LangChain  for intelligent document -based responses.                 
+Object Oriented Programming using Python(Infosys Springboard) |                                                                       June 2025 
+○ Implements class -based architecture  in Python to organize data and behavior through objects.       
+○  Utilizes encapsulation, inheritance, and polymorphism to build reusable and scalable programs.  
+
